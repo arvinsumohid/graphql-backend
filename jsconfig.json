@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "target": "esnext",
+      "baseUrl": "./app",
+      "paths": {
+        "@app/*": ["./*"],
+      }
+    },
+    "exclude": ["node_modules", "dist"]
+  }

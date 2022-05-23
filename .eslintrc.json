@@ -1,0 +1,55 @@
+{
+    "env": {
+        "node": true,
+        "commonjs": true,
+        "jest": true,
+        "es6": true
+    },
+    "extends": [
+        "airbnb-base", "eslint-config-prettier", "plugin:node/recommended"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 2018
+    },
+    "plugins": [
+        "eslint-plugin-prettier",
+        "jest"
+    ],
+    "rules": {
+        "arrow-body-style": "off",
+        "class-methods-use-this": "off",
+        "consistent-return": "off",
+        "func-names": "off",
+        "global-require": 0,
+        "import/no-unresolved": "off",
+        "no-console": "off",
+        "no-plusplus": "off",
+        "no-process-exit": "off",
+        "no-promise-executor-return": "off",
+        "no-underscore-dangle": "off",
+        "no-unused-vars": "warn",
+        "no-use-before-define": "off",
+        "no-useless-escape": "off",
+        "node/no-unpublished-require": ["error", {
+            "allowModules": ["supertest"]
+        }],
+        "node/no-extraneous-require": ["error", {
+            "allowModules": ["graphql-tools", "jest"]
+        }],
+        "node/no-missing-require": "off",
+        "node/no-unsupported-features/es-syntax": "off",
+        "prettier/prettier": "error"
+    },
+    "settings": {
+        "import/resolver": {
+            "alias": [
+                ["@app", "./app"]
+            ]
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "collectCoverage": false,
+    "testTimeout": 30000,
+    "preset": "@shelf/jest-mongodb",
+    "rootDir": ".",
+    "roots": ["./app"],
+    "moduleNameMapper": {
+      "@app/(.*)": "<rootDir>/app/$1"
+    },
+    "detectOpenHandles": true,
+    "verbose": true,
+    "testMatch": ["**/__tests__/**/*.spec.js"],
+    "testSequencer": "<rootDir>/app/__tests__/testSequencer.js"
+  }
